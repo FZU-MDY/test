@@ -86,6 +86,20 @@ char Get_Sign_high(int a){
 	else if(a==2)return '*';
 	else if(a==3)return '/';
 }
+int Left_Brackets(int a){
+	if(a==2)return 0;
+	else {
+		srand(time(NULL));
+		int b=rand()%(a-1)+1
+		return b;
+	}
+}
+int Right_Brackets(int a£¬int l){
+	if(a==0)return 0; 
+	srand(time(NULL));
+	int c=rand()%(a-l)+(l+1);
+	return c;
+} 
 int main(){
 	
 }
