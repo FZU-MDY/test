@@ -6,6 +6,17 @@ int Rand100(){
 	int a=rand()%101;
 	return a;
 }
+double Double_Rand10000(){
+	
+	int a=rand()%101;
+	
+	int b=rand()%101;
+
+	int c=rand()%101;
+	double d=(double)c/100;
+	d+=a*b;
+	return d;
+}
 int Int_Rand10000(){
 	
 	int a=rand()%101;
