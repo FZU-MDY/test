@@ -225,9 +225,9 @@ void judge()
 	{
 		for(int i=0;i<n;i++)
 		{
-			
-			cout<<create12()<<endl;
-			 s=create12();
+			s=create12();
+			cout<<s<<endl;
+			 
 			int answer;
 			cin>>answer;
 			
@@ -245,14 +245,14 @@ void judge()
 	{
 		for(int i=0;i<n;i++)
 		{
-			
-			cout<<create34()<<endl;
 			 s=create34();
-			cout<<calculate(s)<<endl;
+			cout<<s<<endl;
+			
+	
 			int answer;
 			cin>>answer;
 			
-			if(answer==calculate(s))
+			if(answer==(int)(calculate(s)))
 			{
 				sum++;
 				
@@ -267,14 +267,17 @@ void judge()
 	{
 		for(int i=0;i<n;i++)
 		{
+			s=create56();
+			cout<<s<<endl;
+			 
 			
-			cout<<create56()<<endl;
-			 s=create56();
-			cout<<calculate(s)<<endl;
-			int answer;
+			double answer;
 			cin>>answer;
-			
-			if(answer==calculate(s))
+		    double an=calculate(s)*100;
+		    int an0=an;
+		    double an1=an0*1.0/100;//转换成两位小数 
+		    
+			if(answer==an1)
 			{
 				sum++;
 				
@@ -303,3 +306,5 @@ int main()
     
     return 0;
 }
+
+
