@@ -282,6 +282,11 @@ void judge()
 			 
 			
 			double answer;
+			
+			double an=calculate(s)*100;
+                        int an0=round1(an);
+			double an1=(an0*1.0)/100;//转换成两位小数
+			
 			cin>>answer;
 		    double an=calculate(s)*100;
 		    int an0=an;
