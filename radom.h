@@ -86,6 +86,3 @@ char Get_Sign_high(int a){
 	else if(a==2)return '*';
 	else if(a==3)return '/';
 }
-int main(){
-	
-}
