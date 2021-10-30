@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int Rand100(){//0-100随机数
+int Rand100(){
 	
 	int a=rand()%101;
 	return a;
 }
-int Int_Rand10000(){//0-10000整形随机数
+int Int_Rand10000(){
 	
 	int a=rand()%101;
 	srand(a);
 	int b=rand()%101;
 	return a*b;
 }
-double Double_Rand10000(){//0-10000浮点随机数
+double Double_Rand10000(){
 	srand(Int_Rand10000());
 	int a=rand()%101;
 	srand(a);
