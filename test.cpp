@@ -34,6 +34,13 @@ int Add_Sub_Choose(){
 	int a=rand()%2;
 	return a;
 }
+int pa(){
+	int a=rand()%2;
+	return a;
+} 
+int round1(double num){
+	return (num>0.0)?(num+0.5):(num-0.5);	
+}
 int Add_Sub_Multi_Divid_Choose(){
 	
 	int a=rand()%4;
