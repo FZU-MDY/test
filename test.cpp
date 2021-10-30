@@ -101,7 +101,7 @@ double calculate(string s){
             if(flag==1)
             {
 			cnt0++;
-            num = num + (c - '0')*1.0/(cnt0*10);}
+            num = num + (c - '0')*1.0/(pow(10,cnt0));}
 			}
         else if(c=='.'){
         	flag=1;continue;
