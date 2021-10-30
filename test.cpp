@@ -9,16 +9,16 @@ int Rand100(){//0-100随机数
 int Int_Rand10000(){//0-10000整形随机数
 	
 	int a=rand()%101;
-	srand(a);
+	
 	int b=rand()%101;
 	return a*b;
 }
 double Double_Rand10000(){//0-10000浮点随机数
-	srand(Int_Rand10000());
+	
 	int a=rand()%101;
-	srand(a);
+	
 	int b=rand()%101;
-	srand(b);
+	
 	int c=rand()%101;
 	double d=(double)c/100;
 	d+=a*b;
@@ -262,7 +262,7 @@ void judge()
 			int answer;
 			cin>>answer;
 			
-			if(answer==(int)(calculate(s)))
+			if(answer==(int)(round1(calculate(s))))
 			{
 				sum++;
 				
