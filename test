@@ -58,6 +58,7 @@ double calculate(string s){
 }
 
 
+
 string create34(){
 	string s;
 	char sym;
@@ -72,13 +73,30 @@ string create34(){
 				sym=Get_Sign_high(Add_Sub_Multi_Divid_Choose());
 				s=s+sym;
 				string num1=Transform_Int_String(Int_Rand10000());
+
+string create12(){
+	string s;
+	char sym;
+	int len0=Equation_Number();
+	
+			for(int i=0;i<len0;i++) 
+			{
+				if(i==0)
+				s=Transform_Int_String(Rand100());
+				
+				else
+				{
+				sym=Get_Sign_low(Add_Sub_Choose());
+				s=s+sym;
+				
+				string num1=Transform_Int_String(Rand100());
+
 				s=s.append(num1);}
 				
 								
 			}
 	return s;
 }
-
 
 
 int main()
