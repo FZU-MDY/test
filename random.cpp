@@ -3,11 +3,28 @@
 #include<ctime>
 using namespace std;
 string result;
-int Rand100(){				//Éú³É0-100ÕûĞÍµÄËæ»úÊı 
+int Rand100(){				//ç”Ÿæˆ0-100æ•´å‹çš„éšæœºæ•° 
+  srand(time(NULL));
+	int a=rand()%101;
+	return a;
 }
-int Int_Rand10000(){		//Éú³É0-10000ÕûĞÍµÄËæ»úÊı 
+int Int_Rand10000(){		//ç”Ÿæˆ0-10000æ•´å‹çš„éšæœºæ•° 
+  srand(time(NULL));
+	int a=rand()%101;
+	srand(a);
+	int b=rand()%101;
+	return a*b;
 }
-double Double_Rand10000(){	//Éú³É0-10000¸¡µãĞÍµÄËæ»úÊı 
+double Double_Rand10000(){	//ç”Ÿæˆ0-10000æµ®ç‚¹å‹çš„éšæœºæ•°
+  srand(Int_Rand10000());
+	int a=rand()%101;
+	srand(a);
+	int b=rand()%101;
+	srand(b);
+	int c=rand()%101;
+	double d=(double)c/100;
+	d+=a*b;
+	return d;
 }
 int  Equation_Number(){
 }
