@@ -3,13 +3,13 @@
 #include<ctime>
 using namespace std;
 string result;
+
 int Rand100(){
-	srand(time(NULL));
+	
 	int a=rand()%101;
 	return a;
 }
 int Int_Rand10000(){
-	srand(time(NULL));
 	int a=rand()%101;
 	srand(a);
 	int b=rand()%101;
@@ -27,17 +27,14 @@ double Double_Rand10000(){
 	return d;
 }
 int  Equation_Number(){
-	srand(time(NULL));
 	int a=rand()%3+2;
 	return a;
 }
 int Add_Sub_Choose(){
-	srand(time(NULL));
 	int a=rand()%2;
 	return a;
 }
 int Add_Sub_Multi_Divid_Choose(){
-	srand(time(NULL));
 	int a=rand()%4;
 	return a;
 }
@@ -89,17 +86,15 @@ char Get_Sign_high(int a){
 int Left_Brackets(int a){
 	if(a==2)return 0;
 	else {
-		srand(time(NULL));
-		int b=rand()%(a-1)+1
+		int b=rand()%(a-1)+1;
 		return b;
 	}
 }
-int Right_Brackets(int a£¬int l){
+int Right_Brackets(int a,int l){
 	if(a==0)return 0; 
-	srand(time(NULL));
 	int c=rand()%(a-l)+(l+1);
 	return c;
 } 
 int main(){
-	
+	srand(time(NULL)); 
 }
