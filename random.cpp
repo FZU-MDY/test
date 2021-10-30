@@ -3,11 +3,11 @@
 #include<ctime>
 using namespace std;
 string result;
-int Rand100(){				//Éú³É0-100ÕûÐÍµÄËæ»úÊý 
+int Rand100(){				//ç”Ÿæˆ0-100æ•´åž‹çš„éšæœºæ•° 
 }
-int Int_Rand10000(){		//Éú³É0-10000ÕûÐÍµÄËæ»úÊý 
+int Int_Rand10000(){		//ç”Ÿæˆ0-10000æ•´åž‹çš„éšæœºæ•° 
 }
-double Double_Rand10000(){	//Éú³É0-10000¸¡µãÐÍµÄËæ»úÊý 
+double Double_Rand10000(){	//ç”Ÿæˆ0-10000æµ®ç‚¹åž‹çš„éšæœºæ•° 
 }
 int  Equation_Number(){
 }
@@ -16,8 +16,39 @@ int Add_Sub_Choose(){
 int Add_Sub_Multi_Divid_Choose(){
 }
 string Transform_Int_String(int a){
+  string t;
+	char save[20];
+	int n=0;
+	while(a>0){
+		int i=a%10;
+		a=a/10;
+		save[n++]=i;
+	}
+	for(int i=n-1;i>=0;i--){
+		t+=save[i];
+	}
+	return t;
 }
 string Transform_Double_String(double a){
+  string t;
+	char save[20];
+	int n=0;
+	int b=a*100;
+	while(b>0){
+		int i=b%10;
+		b=b/10;
+		if(n!=2){
+			save[n++]=i;
+		}
+		else{
+			save[n++]='.';
+			save[n++]=i;
+		}
+	}
+	for(int i=n-1;i>=0;i++){
+		t+=save[i];
+	}
+	return t;
 }
 string Connect_eqution_low(){
 }
