@@ -179,8 +179,14 @@ string create34(){
 				{
 				sym=Get_Sign_high(Add_Sub_Multi_Divid_Choose());
 				s=s+sym;
+					char sym0='(';
+				char sym1=')';
+				if(i==1&&len0>2)
+				s+=sym0;
 				string num1=Transform_Int_String(Int_Rand10000());
-				s=s.append(num1);}
+				s=s.append(num1);
+				if(i==2)
+				s+=sym1;}
 				
 								
 			}
@@ -204,12 +210,10 @@ string create56(){
 				char sym1=')';
 				if(i==1&&len0>2)
 				s+=sym0;
-				
 				string num1=Transform_Double_String(Double_Rand10000());
-				s=s.append(num1);if(i==2)
-				s+=sym1;}
-				
-								
+				s=s.append(num1);
+				if(i==2)
+				s+=sym1;}						
 			}
 	return s;
 }
