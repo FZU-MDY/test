@@ -165,6 +165,7 @@ string create12(){
 	return s;
 }
 
+
 string create34(){
 	string s;
 	char sym;
