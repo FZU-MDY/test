@@ -3,21 +3,34 @@
 #include<ctime>
 using namespace std;
 string result;
-int Rand100(){				//Éú³É0-100ÕûĞÍµÄËæ»úÊı 
+int Rand100(){				//ç”Ÿæˆ0-100æ•´å‹çš„éšæœºæ•° 
 }
-int Int_Rand10000(){		//Éú³É0-10000ÕûĞÍµÄËæ»úÊı 
+int Int_Rand10000(){		//ç”Ÿæˆ0-10000æ•´å‹çš„éšæœºæ•° 
 }
-double Double_Rand10000(){	//Éú³É0-10000¸¡µãĞÍµÄËæ»úÊı 
+double Double_Rand10000(){	//ç”Ÿæˆ0-10000æµ®ç‚¹å‹çš„éšæœºæ•° 
 }
 int  Equation_Number(){
+  srand(time(NULL));
+	int a = rand() % 3 + 2;
+	return a;
 }
-int Add_Sub_Choose(){
+int Add_Sub_Choose() {
+	srand(time(NULL));
+	int a = rand() % 2;
+	return a;
 }
-int Add_Sub_Multi_Divid_Choose(){
+int Add_Sub_Multi_Divid_Choose() {
+	srand(time(NULL));
+	int a = rand() % 4;
+	return a;
 }
 string Transform_Int_String(int a){
 }
 string Transform_Double_String(double a){
 }
-string Connect_eqution_low(){
+string Connect_eqution_low() {
+	string number;
+	string sign;
+	int num = Equation_Number();
+	int first_number = Rand100();
 }
